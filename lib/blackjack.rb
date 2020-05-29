@@ -70,7 +70,9 @@ def runner
   total = initial_round()
   until total > 21
     display_card_total(total)
+    puts total
     total = hit?(total)
+    puts total
   end
   end_game(total)
 end

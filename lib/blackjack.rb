@@ -65,4 +65,11 @@ end
 
 def runner
   # code runner here
+  welcome()
+  total = initial_round()
+  if total > 21
+    end_game()
+  else
+    hit?(total)
+    display_card_total(total)
 end

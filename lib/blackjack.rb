@@ -30,6 +30,7 @@ end
 
 def initial_round
   # code #initial_round here
+  
 end
 
 def hit?

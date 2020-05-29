@@ -69,10 +69,8 @@ def runner
   welcome()
   total = initial_round()
   until total > 21
-    display_card_total(total)
-    puts total
     total = hit?(total)
-    puts total
+    display_card_total(total)
   end
   end_game(total)
 end
